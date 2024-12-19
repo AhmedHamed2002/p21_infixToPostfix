@@ -1,0 +1,52 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(33, 33, 33) ; 
+}
+
+.title {
+    font-family: cursive;
+    background: linear-gradient(20deg ,  red , rgb(230, 60, 60) , rgb(59, 59, 185) , blue );
+    background-clip: text;
+    color:transparent
+}
+
+input{
+    color: rgb(18, 76, 158) !important;
+    border-radius: 15px !important;
+
+    &:focus{
+        box-shadow: rgba(80, 80, 151, 0.438) 0px 0px 20px 5px !important;
+        border: 2px solid rgb(38, 33, 142) !important;
+        
+    }
+}
+
+.result{
+    color: rgba(106, 106, 214, 0.71);
+}
+
+.box{
+    background-color: rgba(47, 46, 46, 0.825) !important;
+    /* height: 500px; */
+    /* overflow-y: scroll; */
+}
+
+.b{
+    background-color: rgb(33, 33, 33);
+    border-radius: 10px;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+.over{
+    background-color: rgb(33, 33, 33);
+    border-radius: 10px;
+    padding: 5px 10px;
+    overflow-y: scroll;
+    height: 200px;
+}
