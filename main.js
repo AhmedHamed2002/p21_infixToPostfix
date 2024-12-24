@@ -123,14 +123,14 @@ function main() {
 
         // Display tokens with < > brackets
         const tokenDisplay = infix.map(token => `&lt;${token}&gt;`).join(" ");
-        resultsDiv.innerHTML += `<p class="text-white"><strong class="text-success fs-5 me-2">Tokens:</strong> <span class='b'>${tokenDisplay}</span></p>`;
+        resultsDiv.innerHTML += `<p class="text-white d-flex flex-column flex-md-row my-2"><strong class="text-success fs-md-5 me-2 my-2 fs-6">Tokens:</strong> <span class='b'>${tokenDisplay}</span></p>`;
 
         // Display postfix notation
         const postfixString = postfix.join(" ");
         const result = compute();
 
-        resultsDiv.innerHTML += `<p class="text-white"><strong class="text-success fs-5 me-2">Postfix:</strong> <span class='b'>${postfixString}</span></p>`;
-        resultsDiv.innerHTML += `<p class="text-white"><strong class="text-success fs-5 me-2">Result:</strong><span class='b'> ${result}</span></p>`;
+        resultsDiv.innerHTML += `<p class="text-white d-flex flex-column flex-md-row my-2"><strong class="text-success fs-md-5 me-2 my-2 fs-6">Postfix:</strong> <span class='b'>${postfixString}</span></p>`;
+        resultsDiv.innerHTML += `<p class="text-white d-flex flex-column flex-md-row my-2"><strong class="text-success fs-md-5 me-2 my-2 fs-6">Result:</strong><span class='b'> ${result}</span></p>`;
 
         // Calculate additional metrics
         const n = input.length;
@@ -141,11 +141,11 @@ function main() {
         const subsequences = Math.pow(2, n);
 
         // Display calculated values
-        resultsDiv.innerHTML += `<p class="text-white"><strong class="text-success fs-5 me-2">Number of prefixes:</strong> <span class='b'> ${prefixes}</span></p>`;
-        resultsDiv.innerHTML += `<p class="text-white"><strong class="text-success fs-5 me-2">Number of suffixes:</strong> <span class='b'>${suffixes}</span></p>`;
-        resultsDiv.innerHTML += `<p class="text-white"><strong class="text-success fs-5 me-2">Number of proper prefixes:</strong> <span class='b'>${properPrefixes}</span></p>`;
-        resultsDiv.innerHTML += `<p class="text-white"><strong class="text-success fs-5 me-2">Number of substrings:</strong><span class='b'> ${substrings}</span></p>`;
-        resultsDiv.innerHTML += `<p class="text-white"><strong class="text-success fs-5 me-2">Number of subsequences:</strong><span class='b'> ${subsequences}</span></p>`;
+        resultsDiv.innerHTML += `<p class="text-white d-flex flex-column flex-md-row my-2"><strong class="text-success fs-md-5 me-2 my-2 fs-6">Number of prefixes:</strong> <span class='b'> ${prefixes}</span></p>`;
+        resultsDiv.innerHTML += `<p class="text-white d-flex flex-column flex-md-row my-2"><strong class="text-success fs-md-5 me-2 my-2 fs-6">Number of suffixes:</strong> <span class='b'>${suffixes}</span></p>`;
+        resultsDiv.innerHTML += `<p class="text-white d-flex flex-column flex-md-row my-2"><strong class="text-success fs-md-5 me-2 my-2 fs-6">Number of proper prefixes:</strong> <span class='b'>${properPrefixes}</span></p>`;
+        resultsDiv.innerHTML += `<p class="text-white d-flex flex-column flex-md-row my-2"><strong class="text-success fs-md-5 me-2 my-2 fs-6">Number of substrings:</strong><span class='b'> ${substrings}</span></p>`;
+        resultsDiv.innerHTML += `<p class="text-white d-flex flex-column flex-md-row my-2"><strong class="text-success fs-md-5 me-2 my-2 fs-6">Number of subsequences:</strong><span class='b'> ${subsequences}</span></p>`;
 
         // Display prefixes
         let  box1 =  "" ; 
